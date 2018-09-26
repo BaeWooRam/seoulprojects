@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--nearhereinfo 치수 설정-->
+    <dimen name="nearhereinfo_button_size">45dp</dimen>
+    <dimen name="nearhereinfo_margin">10dp</dimen>
+    <dimen name="nearhereinfo_filter_margintop">55dp</dimen>
+</resources>

@@ -1,23 +1,30 @@
-﻿package com.example.myapplication;
+package com.example.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLEncoder;
+import com.example.myapplication.Fragment.Fragment_NearHereInfo;
 
 public class MainActivity extends AppCompatActivity {
-    private String api_key = "724f4c6a55766f6138304476465169";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-  
+        NavigateToFragment(new Fragment_NearHereInfo(),getSupportFragmentManager(), R.id.main_container,false);
     }
-   
+
+    public static void NavigateToFragment(Fragment fragment, FragmentManager manager, int container_id, boolean addToBackstack) {
+        FragmentTransaction transaction = manager.beginTransaction().replace(container_id, fragment);
+
+        if (addToBackstack) {
+            transaction.addToBackStack(null);
+        }
+
+        transaction.commit();
+    }
 }
