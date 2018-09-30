@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:padding="8dp">
+
+
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="검색하기"
+            android:singleLine="true"
+            android:textColorHint="#ffffff"
+            android:textColorLink="@android:color/holo_purple"
+            android:layout_weight="8"/>
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:src="@drawable/btn_search" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/add_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/btn_corners"
+            android:layout_marginLeft="10dp"
+            android:text="게시글 작성" />
+
+        <Button
+            android:id="@+id/search_filter"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/btn_corners"
+            android:text="필터" />
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff" />
+
+
+</LinearLayout>

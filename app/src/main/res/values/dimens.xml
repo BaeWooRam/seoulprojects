@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--바텀 네비게이션 치수-->
+    <dimen name="bottom_nav_elevation_high">11dp</dimen>
+
+    <!--dialog 치수 설정-->
+    <item name="dialog_min_width_major" type="dimen">95%</item>
+    <item name="dialog_min_width_minor" type="dimen">95%</item>
+    <dimen name="dialog_padding">20dp</dimen>
+    <dimen name="dialog_margin">10dp</dimen>
+    <dimen name="dialog_icon_size">80dp</dimen>
+    <!--nearhereinfo 치수 설정-->
+    <dimen name="nearhereinfo_button_size">45dp</dimen>
+    <dimen name="nearhereinfo_margin">10dp</dimen>
+    <dimen name="nearhereinfo_filter_margintop">55dp</dimen>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SponEnrollment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#f6f6f6">
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="20"
+                android:inputType="textPersonName"
+                android:background="@drawable/rectangle"
+                android:hint="제목을 입력해주세요."
+                android:layout_margin="15dp"
+                android:padding="5dp"
+                android:elevation="3dp"
+                />
+
+            <ImageView
+                android:id="@+id/enroll_image"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="팀 이름을 입력해주세요."/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="10"
+                android:gravity="start"
+                android:background="@drawable/rectangle"
+                android:padding="5dp"
+                android:layout_margin="15dp"
+                android:elevation="3dp"
+                android:hint="팀을 소개하는 글과 후원받고자 하는 내용을 써주세요"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#f6f6f6">
+
+                <Button
+                    android:id="@+id/eCancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="3dp"
+                    android:text="취소" />
+
+                <Button
+                    android:id="@+id/eOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#ffffff"
+                    android:elevation="3dp"
+                    android:text="등록" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

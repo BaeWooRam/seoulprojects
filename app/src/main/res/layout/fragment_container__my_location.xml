@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Container_MyLocationFragment">
+
+    <com.nhn.android.maps.NMapView android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/NearHereInfo_mapView"> </com.nhn.android.maps.NMapView>
+
+    <ImageButton android:layout_height="@dimen/nearhereinfo_button_size" android:layout_width="@dimen/nearhereinfo_button_size" android:id="@+id/NearHereInfo_btnOption" android:background="@color/NearHereinfo_btn_off" android:src="@drawable/fragment_nearhereinfo_filter" android:layout_marginTop="@dimen/nearhereinfo_filter_margintop" android:layout_marginRight="@dimen/nearhereinfo_margin" android:layout_gravity="top|right"/>
+
+    <ImageButton android:layout_height="@dimen/nearhereinfo_button_size" android:layout_width="@dimen/nearhereinfo_button_size" android:id="@+id/NearHereInfo_btnNavi" android:background="@color/NearHereinfo_btn_off" android:src="@drawable/fragment_nearhereinfo_mylocation" android:layout_gravity="top|right" android:layout_margin="@dimen/nearhereinfo_margin"/>
+</FrameLayout>

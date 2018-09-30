@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.AppCompat.Light.Dialog">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collpaseBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="#ffffff"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/toolbar"/>
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textSize="30sp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_corners"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:srcCompat="@drawable/btn_corners" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="1"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                >
+                <TextView
+                    android:id="@+id/writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="팀이름"
+                    android:layout_marginLeft="10dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    />
+                <FrameLayout
+                    android:layout_columnWeight="1"
+                    android:gravity="center">
+                <TextView
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="좋아요"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/btn_heart"
+                    />
+                </FrameLayout>
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/btn_corners"
+                android:id="@+id/content"
+                android:gravity="left|top"
+                android:hint="부연설명"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

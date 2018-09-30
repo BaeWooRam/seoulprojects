@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/dialog_icon_all"
+            android:layout_width="@dimen/dialog_icon_size"
+            android:layout_height="@dimen/dialog_icon_size"
+            android:layout_margin="@dimen/dialog_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filter_all"
+            android:background="@color/color_white" />
+        <ImageButton
+            android:id="@+id/dialog_icon_music"
+            android:layout_width="@dimen/dialog_icon_size"
+            android:layout_height="@dimen/dialog_icon_size"
+            android:layout_margin="@dimen/dialog_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filter_music"
+            android:background="@color/color_white" />
+
+        <ImageButton
+            android:id="@+id/dialog_icon_art"
+            android:layout_width="@dimen/dialog_icon_size"
+            android:layout_height="@dimen/dialog_icon_size"
+            android:background="@color/color_white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filter_art"
+            android:layout_margin="@dimen/dialog_margin"/>
+        <ImageButton
+            android:id="@+id/dialog_icon_handicraft"
+            android:layout_width="@dimen/dialog_icon_size"
+            android:layout_height="@dimen/dialog_icon_size"
+            android:layout_marginLeft="@dimen/dialog_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filter_handicraft"
+            android:background="@color/color_white"/>
+        <ImageButton
+            android:id="@+id/dialog_icon_theater"
+            android:layout_width="@dimen/dialog_icon_size"
+            android:layout_height="@dimen/dialog_icon_size"
+            android:layout_marginLeft="@dimen/dialog_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filter_theater"
+            android:background="@color/color_white"/>
+        <ImageButton
+            android:id="@+id/dialog_icon_picture"
+            android:layout_width="@dimen/dialog_icon_size"
+            android:layout_height="@dimen/dialog_icon_size"
+            android:layout_marginLeft="@dimen/dialog_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filter_picture"
+            android:background="@color/color_white"/>
+    </GridLayout>
+
+</LinearLayout>
